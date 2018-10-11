@@ -1,0 +1,876 @@
+/*
+* @Author: admin
+* @Date:   2018-08-29 18:42:01
+* @Last Modified by:   admin
+* @Last Modified time: 2018-10-08 15:47:06
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.clearboth{
+        zoom: 1;
+      }
+.clearboth::after{
+content: "";
+display: block;
+clear: both;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/* body{
+ background: linear-gradient(#dedede, #f4e7d4);
+} */
+body{
+	position: relative;
+}
+header{
+	width: 1365px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+header .left{
+	width: 150px;
+	float: left;
+}
+header .logo{
+	display: inline-block;
+	width: 95px;
+	height: 43px;
+	background: url('../image/jinglingtu.png') no-repeat -3px -588px;
+}
+header .left p{
+	margin-top: -18px;
+	margin-left: 45px;
+}
+header .left p a{
+	font-size: 14px;
+	color: skyblue;
+}
+header .center{
+	width: 670px;
+	height: 40px;
+	border: 1px solid #ccc;
+	float: left;
+	margin-left: 30px;
+	border-radius: 5px;
+}
+header .center #select{
+	width: 120px;
+	height: 40px;
+	float: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	font-size: 18px;
+}
+header .center .search{
+	width: 500px;
+	height: 40px;
+	float: left;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	border: 1px solid #ccc;
+}
+header .center .tp{
+	width: 50px;
+	height: 40px;
+	background-color: #666;
+	float: left;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+header .center .tp span{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url('../image/jinglingtu1.png') no-repeat -30px -280px;
+}
+header .right{
+	float: right;
+	width: 400px;
+	height: 40px;
+	background: url('../image/pic,jpg.bmp') no-repeat;
+}
+nav{
+	width: 1413px;
+	height: 68px;
+	margin: 10px;
+	position: relative;
+	background: linear-gradient(#fff,#fff,gray);
+	z-index: 10;
+	box-sizing: border-box;
+}
+nav .left{
+	width: 128px;
+	height: 50px;
+	padding: 5px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+nav .left span{
+	margin-left: 5px;
+	float: left;
+	width: 118px;
+	height: 50px;
+}
+nav .left span{
+	float: left;
+	margin-top: 7px;
+	margin-right: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 24px;
+	background-image: url('../image/jinglingtu1.png');
+	background-position: -209px -336px ;
+}
+nav .left p a{
+	color: #000;
+	text-decoration: none;
+}
+nav .left:hover{
+	border: 1px solid #000;
+	border-radius: 5%;
+}
+nav .left1{
+	width: 128px;
+	float: left;
+	position: relative;
+	top: -52px;
+	left: 124px;
+	border: 1px solid transparent;
+}
+nav .left1 p{
+	float: left;
+	width: 122px;
+	margin-right: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+nav .left1 b{
+	float: left;
+	width: 122px;
+	margin-right: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+nav .left1 p a{
+	color: #000;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+}
+nav .left1 ul li a{
+	margin-top: 3px;
+	width: 133px;
+	height: 30px;
+	float: left;
+	text-align: center;
+}
+nav .left1 span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url('../image/jinglingtu.png');
+	background-position: -84px 1px;
+	position: absolute;
+	top: 39px;
+	left: 99px;
+}
+nav .left1:hover{
+	border: 1px solid #ccc;
+	border-radius: 5%;
+} 
+nav .left1 a:hover{
+	color: #ff8c00;
+}
+nav .center{
+	width: 574px;
+	height: 50px;
+	position: absolute;
+	top: 1px;
+	left: 257px;
+}
+nav .center p {
+	float: left;
+	width: 122px;
+	height: 50px;
+	margin-right: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+nav .center p a{
+	color: #000;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+}
+nav .center ul li a{
+	margin-top: 24px;
+	width: 80px;
+	height: 30px;
+	float: left;
+	text-align: center;
+}
+nav .center span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url('../image/jinglingtu.png');
+	background-position: -84px 1px;
+	position: absolute;
+	top: 27px;
+	left: 90px;
+}
+nav .center p:hover{
+	border: 1px solid #ccc;
+	border-radius: 5%;
+}
+nav .center a:hover{
+	color: #ff8c00;
+}
+nav .account{
+	width: 120px;
+	height: 45px;
+	text-align: center;
+	border-right: 1px solid #000;
+	position: relative;
+	position: absolute;
+	top: 14px;
+	left: 870px;
+}
+nav .account .bot{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -379px -85px;
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	top: 23px;
+	right: 0px;
+}
+nav .account .menu{
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	z-index: 10;
+	width: 120px;
+	text-align: center;
+	color: #333; 
+	display: none;
+}
+nav .account ul li{
+	width: 120px;
+	height: 25px;
+	border:none;
+	line-height: 25px;
+	border-top:1px solid #989898;
+	background:rgba(10,5,5,0.45);
+	border-radius:10px;	
+}
+nav .free{
+	float: left;
+	width: 120px;
+	height: 45px;
+	text-align: center;
+	border-right: 1px solid #000;
+	position: relative;
+	position: absolute;
+	top: 14px;
+	left: 987px;
+	box-sizing: border-box;
+}
+nav .free .bot{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -379px -85px;
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	top: 23px;
+	right: 10px;
+}
+nav .free ul{
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	z-index: 10;
+	width: 120px;
+	text-align: center;
+	color: #333; 
+	display: none;
+}
+nav .free ul li img{
+	border: 10px solid #fff;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+nav .shopcar{
+	width: 120px;
+	height: 45px;
+	float: left;
+	position: relative;
+	border-right: 1px solid #000;
+	position: absolute;
+	top: 14px;
+	left: 1108px;
+}
+nav .shopcar p{
+	float: right;
+	margin-top: 20px;
+}
+nav .shopcar span{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -154px -234px;
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+nav .shopcar .zero{
+	position: absolute;
+	top: -15px;
+	left: 20px;
+	font-size: 16px;
+	color: orange;
+}
+nav .wish{
+	width: 149px;
+	height: 45px;
+	float: left;
+	position: relative;
+	position: absolute;
+	top: 14px;
+	left: 1231px;
+}
+nav .wish p{
+	text-align: center;
+	line-height: 45px;
+}
+nav .wish .bot{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -379px -85px;
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+nav .wish ul{
+	display: none;
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	z-index: 10;
+	width: 120px;
+	text-align: center;
+	color: #333; 
+	display: none;
+}
+nav .wish ul li{
+	width: 149px;
+	height: 25px;
+	border:none;
+	line-height: 25px;
+	border-top:1px solid #989898;
+	background:rgba(10,5,5,0.45);
+	border-radius:10px;	
+}
+nav .account:hover .menu{
+	display:block;
+	animation:roll 1.5s ease;
+	transform-origin: top center;
+}
+nav .wish:hover ul{
+	display:block;
+	animation:roll 1.5s ease;
+	transform-origin: top center;
+}
+@keyframes roll{
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+aside{
+	width: 150px;
+	box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4);
+	margin-left: 10px;
+	position: fixed;
+	top: 127px;
+	left: 121px;
+	z-index: 999;
+	display: none;
+}
+aside{
+	width: 150px;
+	float: left;
+	box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4);
+	margin-left: 10px;
+}
+a{
+	color: #333;
+}
+aside>ul>li>a{
+	color: #fff;
+} 
+aside>ul{
+	background: #303942;
+}
+.topmenu{
+	width: 100%;
+	height: 40px;
+	text-align: left;
+	padding-left: 4px;
+	line-height: 40px;
+	font-size: 14px;
+	font-family: '楷体';
+	border-bottom: 2px solid skyblue;
+}
+.topmenu li>a{
+	float: left;
+}
+aside .submenu{
+	width: 700px;
+	height: 420px;
+	float: left;
+	position: absolute;
+	top: 5px;
+	left: 150px;
+	z-index: 5;
+	overflow: hidden;
+	display: none;
+	background-color: #eee;
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
+	border-left-color: transparent;
+}
+aside .submenu ul{
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px dashed skyblue;	
+}
+aside .submenu h6{
+	font-size: 18px;
+	float: left;
+	margin-right: 10px;
+}
+aside .submenu li{
+	width: 700px;
+	font-size: 14px;
+	margin-top: 10px;
+}
+aside .submenu li a{
+	height: 25px;
+	width: 100px;
+	font-size: 16px;
+	float: left;
+	text-align: center;
+	line-height: 25px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	border-right: 1px solid red;
+}
+.side{
+	border: 2px solid red;
+	border-left: 5px solid red;
+	font-size: 16px;
+	background-color: yellow;
+}
+.one{
+	width: 900px;
+	height: 50px;
+	margin: 10px auto;
+	border: 1px solid #8c6e00;
+	margin-top: 35px;
+}
+.one span{
+	display: inline-block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-image: url('../image/jinglingtu.png');
+	background-position: 123px -27px;
+}
+.one p{
+	width: 800px;
+	font-size: 14px;
+	float: left;
+	margin-top: 13px;
+	margin-left: 10px;
+}
+.one a{
+	color: blue;
+}
+.two{
+	width: 900px;
+	height: 80px;
+	margin: 10px auto;
+	border: 1px solid #8c6e00;
+}
+.two span{
+	display: inline-block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-image: url('../image/jinglingtu.png');
+	background-position: 123px -27px;
+}
+.two p{
+	width: 800px;
+	font-size: 14px;
+	float: left;
+	margin-top: 13px;
+	margin-left: 10px;
+}
+.three{
+	width: 900px;
+	height: 80px;
+	margin: 10px auto;
+	margin-top: 35px;
+}
+.three h2{
+	font-weight: normal;
+}
+.four{
+	width: 160px;
+	height: 240px;
+	border: 1px solid #eee;
+	position: fixed;
+	top: 200px;
+	right: 35px;
+}
+.four h3{
+	border-bottom: 1px solid #eee;
+	text-align: center;
+}
+.four ol li{
+	margin-top: 10px;
+}
+.four ol li a{
+	color: blue;
+}
+.five{
+	width: 900px;
+	border-top: 1px solid #ccc;
+	margin: 0px auto;
+	color: blue;
+}
+.five a{
+	color: blue;
+	font-size: 14px;
+	position: absolute;
+	top: 10px;
+	left: 91px;
+}
+.five .five1{
+	width: 290px;
+	margin-left: 10px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	float: left;
+	position: relative;
+	font-size: 14px;
+}
+.five .five1 ul li:nth-child(1){
+	position: absolute;
+	top: 29px;
+	left: 100px;
+}
+.five .five1 ul li:nth-child(2){
+	position: absolute;
+	top: 48px;
+	left: 100px;
+}
+.five .five1 img{
+	width: 80px;
+	height: 80px;
+}
+.five .five1 ul li p{
+	width: 10px;
+	height: 10px;
+	float: left;
+	font-weight: 900;
+	color: #949494;
+}
+.six{
+	width: 1000px;
+	margin: 20px auto 10px;
+	position: relative;
+}
+.six h4{
+	width: 900px;
+	margin-top: 20px;
+	padding-left: 40px;
+	box-sizing: border-box;
+}
+.six input{
+	width: 700px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: 40px;
+	box-sizing: border-box;
+}
+.six button{
+	width: 150px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: #4e555e;
+	color: #fff;
+	border: 1px solid #3d444c;
+	border-radius: 3px;
+}
+.six span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url('../image/jinglingtu1.png');
+	background-position: -2px 507px;
+	position: absolute;
+	top: 40px;
+	left: 37px;
+}
+.sever{
+	width: 1000px;
+	margin: 20px auto;
+	margin-left: 236px;
+}
+.sever h3{
+	margin-bottom: 30px;
+}
+.sever ul{
+	width: 250px;
+	height: 320px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding-left: 20px;
+	box-sizing: border-box;
+	float: left;
+}
+.sever ul li{
+	margin-top: 10px;
+}
+.sever .s1{
+	width: 600px;
+	height: 320px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding-left: 20px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+}
+.sever .s1 img{
+	position: absolute;
+	top: 70px;
+	right: -12px;
+}
+.sever .s1 .ol1{
+	float: left;
+	z-index: 10;
+}
+.sever .s1 .ol1 li{
+	margin-top: 5px;
+}
+.sever .s1 .ol1 li a{
+	font-size: 14px;
+	color: blue;
+}
+.sever .s1 .ol2{
+	position: absolute;
+	top: 10px;
+	left: 285px;
+	z-index: 10;
+}
+.sever .s1 .ol2 li{
+	margin-top: 5px;
+}
+.sever .s1 .ol2 li a{
+	font-size: 14px;
+	color: blue;
+}
+.sever .s1{
+	display: none;
+}
+.sever .s1:nth-of-type(1){
+	display: block;
+}
+.eight{
+	width: 500px;
+	margin: 10px auto;
+	margin-bottom: 30px;
+}
+.eight img{
+	width: 500px;
+}
+footer{
+  width: 1450px;
+}
+footer a{
+  color: blue;
+}
+footer .about{
+  width: 1000px;
+  margin: 0px auto; 
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 40px;
+}
+footer .about a{
+  display: inline-block;
+  font-size: 14px;
+  width: 200px;
+}
+footer .about ul{
+  width: 200px;
+  float: left;
+  margin-right: 30px;
+}
+footer .about p{
+  margin-bottom: 10px;
+}
+
+footer .other{
+  width: 1450px;
+}
+footer .other .title{
+  text-align: center;
+}
+footer .other .onel{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin: 10px auto;
+}
+footer .other .onel ul{
+  text-align: center;
+  float: left;
+  line-height: 14px;
+}
+footer .other .onel ul:nth-of-type(1){
+  margin-left: 100px;
+}
+footer .other .onel ul li{
+  display: inline;
+  border-left: 1px solid #666;
+  padding: 0px 5px;
+  font-size: 12px;
+}
+footer .other .onel ul li:nth-of-type(1){
+  border: none;
+}
+footer .other .onel span{
+  display: inline-block;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 12px;
+  float: left;
+  color: #767676;
+}
+footer .other .onel ul:nth-of-type(2) li:nth-of-type(4){
+  color: #767676;
+}
+footer .other .twol{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin: 10px auto;
+}
+footer .other .twol ul{
+  text-align: center;
+  float: left;
+  line-height: 14px;
+}
+footer .other .twol ul{
+  margin-left: 450px;
+}
+footer .other .twol ul:nth-of-type(2){
+  width: 0px;
+  height: 0px;
+}
+footer .other .twol ul li{
+  display: inline;
+  border-left: 1px solid #666;
+  padding: 0px 5px;
+  font-size: 12px;
+}
+footer .other .twol ul li:nth-of-type(1){
+  border: none;
+}
+footer .other .twol span{
+  display: inline-block;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 12px;
+  float: left;
+  color: #767676;
+}
+footer .other .threel{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin: 10px auto;
+}
+footer .other .threel ul{
+  text-align: center;
+  float: left;
+  line-height: 14px;
+  margin-left: 480px;
+}
+footer .other .threel ul li{
+  display: inline;
+  border-right: 1px solid #666;
+  padding: 0px 5px;
+  font-size: 12px;
+}
+footer .other .threel ul li:nth-of-type(2){
+  border: none;
+}
+footer .other .threel ul li img{
+  vertical-align: top;
+}
+
+footer .other .fourl{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin: 10px auto;
+}
+footer .other .fourl ul{
+  text-align: center;
+  float: left;
+  line-height: 14px;
+  margin-left: 670px;
+}
+footer .other .fourl ul li{
+  display: inline;
+  padding: 0px 5px;
+  font-size: 12px;
+}
+
+footer .other .fivel{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin: 10px auto;
+}
+footer .other .fivel ul{
+  text-align: center;
+  float: left;
+  line-height: 14px;
+  margin-left: 550px;
+}
+footer .other .fivel ul li{
+  display: inline;
+  border-right: 1px solid #666;
+  padding: 0px 5px;
+  font-size: 12px;
+  color: #767676;
+}
+footer .other .fivel ul li:nth-of-type(2){
+  border: none;
+}

@@ -1,0 +1,533 @@
+/*
+* @Author: admin
+* @Date:   2018-08-29 18:42:01
+* @Last Modified by:   admin
+* @Last Modified time: 2018-09-27 15:36:23
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.clearboth{
+        zoom: 1;
+      }
+.clearboth::after{
+content: "";
+display: block;
+clear: both;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/* body{
+ background: linear-gradient(#dedede, #f4e7d4);
+} */
+body{
+	position: relative;
+}
+header{
+	width: 1365px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+header .left{
+	width: 150px;
+	float: left;
+}
+header .logo{
+	display: inline-block;
+	width: 95px;
+	height: 43px;
+	background: url('../image/jinglingtu.png') no-repeat -3px -588px;
+}
+header .left p{
+	margin-top: -18px;
+	margin-left: 45px;
+}
+header .left p a{
+	font-size: 14px;
+	color: skyblue;
+}
+header .center{
+	width: 670px;
+	height: 40px;
+	border: 1px solid #ccc;
+	float: left;
+	margin-left: 30px;
+	border-radius: 5px;
+}
+header .center #select{
+	width: 120px;
+	height: 40px;
+	float: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	font-size: 18px;
+}
+header .center .search{
+	width: 500px;
+	height: 40px;
+	float: left;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	border: 1px solid #ccc;
+}
+header .center .tp{
+	width: 50px;
+	height: 40px;
+	background-color: #666;
+	float: left;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+header .center .tp span{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url('../image/jinglingtu1.png') no-repeat -30px -280px;
+}
+header .right{
+	float: right;
+	width: 400px;
+	height: 40px;
+	background: url('../image/pic,jpg.bmp') no-repeat;
+}
+nav{
+	width: 1413px;
+	height: 68px;
+	margin: 10px;
+	position: relative;
+	background: linear-gradient(#fff,#fff,gray);
+	z-index: 10;
+	box-sizing: border-box;
+}
+nav .left{
+	width: 128px;
+	height: 50px;
+	padding: 5px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+nav .left span{
+	margin-left: 5px;
+	float: left;
+	width: 118px;
+	height: 50px;
+}
+nav .left span{
+	float: left;
+	margin-top: 7px;
+	margin-right: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 24px;
+	background-image: url('../image/jinglingtu1.png');
+	background-position: -209px -336px ;
+}
+nav .left p a{
+	color: #000;
+	text-decoration: none;
+}
+nav .left:hover{
+	border: 1px solid #000;
+	border-radius: 5%;
+}
+nav .left1{
+	width: 128px;
+	float: left;
+	position: relative;
+	top: -52px;
+	left: 124px;
+	border: 1px solid transparent;
+}
+nav .left1 p{
+	float: left;
+	width: 122px;
+	margin-right: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+nav .left1 b{
+	float: left;
+	width: 122px;
+	margin-right: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+nav .left1 p a{
+	color: #000;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+}
+nav .left1 ul li a{
+	margin-top: 3px;
+	width: 133px;
+	height: 30px;
+	float: left;
+	text-align: center;
+}
+nav .left1 span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url('../image/jinglingtu.png');
+	background-position: -84px 1px;
+	position: absolute;
+	top: 39px;
+	left: 99px;
+}
+nav .left1:hover{
+	border: 1px solid #ccc;
+	border-radius: 5%;
+} 
+nav .left1 a:hover{
+	color: #ff8c00;
+}
+nav .center{
+	width: 574px;
+	height: 50px;
+	position: absolute;
+	top: 1px;
+	left: 257px;
+}
+nav .center p {
+	float: left;
+	width: 122px;
+	height: 50px;
+	margin-right: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+nav .center p a{
+	color: #000;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+}
+nav .center ul li a{
+	margin-top: 24px;
+	width: 80px;
+	height: 30px;
+	float: left;
+	text-align: center;
+}
+nav .center span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url('../image/jinglingtu.png');
+	background-position: -84px 1px;
+	position: absolute;
+	top: 27px;
+	left: 90px;
+}
+nav .center p:hover{
+	border: 1px solid #ccc;
+	border-radius: 5%;
+}
+nav .center a:hover{
+	color: #ff8c00;
+}
+nav .account{
+	width: 120px;
+	height: 45px;
+	text-align: center;
+	border-right: 1px solid #000;
+	position: relative;
+	position: absolute;
+	top: 14px;
+	left: 870px;
+}
+nav .account .bot{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -379px -85px;
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	top: 23px;
+	right: 0px;
+}
+nav .account .menu{
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	z-index: 10;
+	width: 120px;
+	text-align: center;
+	color: #333; 
+	display: none;
+}
+nav .account ul li{
+	width: 120px;
+	height: 25px;
+	border:none;
+	line-height: 25px;
+	border-top:1px solid #989898;
+	background:rgba(10,5,5,0.45);
+	border-radius:10px;	
+}
+nav .free{
+	float: left;
+	width: 120px;
+	height: 45px;
+	text-align: center;
+	border-right: 1px solid #000;
+	position: relative;
+	position: absolute;
+	top: 14px;
+	left: 987px;
+}
+nav .free .bot{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -379px -85px;
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	top: 23px;
+	right: 10px;
+}
+nav .free ul{
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	z-index: 10;
+	width: 120px;
+	text-align: center;
+	color: #333; 
+	display: none;
+}
+nav .free ul li img{
+	border: 10px solid #fff;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+nav .shopcar{
+	width: 120px;
+	height: 45px;
+	float: left;
+	position: relative;
+	border-right: 1px solid #000;
+	position: absolute;
+	top: 14px;
+	left: 1108px;
+}
+nav .shopcar p{
+	float: right;
+	margin-top: 20px;
+}
+nav .shopcar span{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -154px -234px;
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+nav .shopcar .zero{
+	position: absolute;
+	top: -15px;
+	left: 20px;
+	font-size: 16px;
+	color: orange;
+}
+nav .wish{
+	width: 149px;
+	height: 45px;
+	float: left;
+	position: relative;
+	position: absolute;
+	top: 14px;
+	left: 1231px;
+}
+nav .wish p{
+	text-align: center;
+	line-height: 45px;
+}
+nav .wish .bot{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -379px -85px;
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+nav .wish ul{
+	display: none;
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	z-index: 10;
+	width: 120px;
+	text-align: center;
+	color: #333; 
+	display: none;
+}
+nav .wish ul li{
+	width: 149px;
+	height: 25px;
+	border:none;
+	line-height: 25px;
+	border-top:1px solid #989898;
+	background:rgba(10,5,5,0.45);
+	border-radius:10px;	
+}
+nav .account:hover .menu{
+	display:block;
+	animation:roll 1.5s ease;
+	transform-origin: top center;
+}
+nav .wish:hover ul{
+	display:block;
+	animation:roll 1.5s ease;
+	transform-origin: top center;
+}
+@keyframes roll{
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+aside{
+	width: 150px;
+	box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4);
+	margin-left: 10px;
+	position: fixed;
+	top: 127px;
+	left: 121px;
+	z-index: 999;
+	display: none;
+}
+aside{
+	width: 150px;
+	float: left;
+	box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4);
+	margin-left: 10px;
+}
+a{
+	color: #333;
+}
+aside>ul>li>a{
+	color: #fff;
+} 
+aside>ul{
+	background: #303942;
+}
+.topmenu{
+	width: 100%;
+	height: 40px;
+	text-align: left;
+	padding-left: 4px;
+	line-height: 40px;
+	font-size: 14px;
+	font-family: '楷体';
+	border-bottom: 2px solid skyblue;
+}
+.topmenu li>a{
+	float: left;
+}
+aside .submenu{
+	width: 700px;
+	height: 420px;
+	float: left;
+	position: absolute;
+	top: 5px;
+	left: 150px;
+	z-index: 5;
+	overflow: hidden;
+	display: none;
+	background-color: #eee;
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
+	border-left-color: transparent;
+}
+aside .submenu ul{
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px dashed skyblue;	
+}
+aside .submenu h6{
+	font-size: 18px;
+	float: left;
+	margin-right: 10px;
+}
+aside .submenu li{
+	width: 700px;
+	font-size: 14px;
+	margin-top: 10px;
+}
+aside .submenu li a{
+	height: 25px;
+	width: 100px;
+	font-size: 16px;
+	float: left;
+	text-align: center;
+	line-height: 25px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	border-right: 1px solid red;
+}
+.side{
+	border: 2px solid red;
+	border-left: 5px solid red;
+	font-size: 16px;
+	background-color: yellow;
+}
+.a{
+	width: 1334px;
+	overflow: hidden;
+}
+.a .left{
+	width: 204px;
+	height: 48px;
+	background-image: url('../image/jinglingtu03.png');
+	background-position: 12px 0px;
+	box-sizing: border-box;
+}
+.a .right{
+	width: 700px;
+	height: 50px;
+	float: right;
+	margin-top: -45px;
+}
+.a .right ul li{
+	width: 120px;
+	float: left;
+	font-size: 17px;
+	margin-left: 15px;
+	color: blue;
+	text-align: center;
+	line-height: 35px;
+	position: relative;
+	font-weight: bold;
+}
+.a .right span{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-image: url('../image/jinglingtu03.png');
+	position: absolute;
+	top: 1px;
+	left: -18px;
+}
+.a .right .sp1{
+	background-position: -195px 0px;
+}
+.a .right .sp2{
+	background-position: -240px 0px;
+}
+.a .right .sp3{
+	background-position: -285px 0px;
+}
+.a .right .sp4{
+	background-position: -330px 0px;
+}
+.a .right .sp5{
+	background-position: -365px 1px;
+}

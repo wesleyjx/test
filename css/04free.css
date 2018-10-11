@@ -1,0 +1,525 @@
+/*
+* @Author: admin
+* @Date:   2018-09-22 18:32:18
+* @Last Modified by:   admin
+* @Last Modified time: 2018-09-28 14:42:37
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+header{
+	width: 1365px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+header .left{
+	width: 150px;
+	float: left;
+}
+header .logo{
+	display: inline-block;
+	width: 95px;
+	height: 43px;
+	background: url('../image/jinglingtu.png') no-repeat -3px -588px;
+}
+header .left p{
+	margin-top: -18px;
+	margin-left: 45px;
+}
+header .left p a{
+	font-size: 14px;
+	color: skyblue;
+}
+header .center{
+	width: 670px;
+	height: 40px;
+	border: 1px solid #ccc;
+	float: left;
+	margin-left: 30px;
+	border-radius: 5px;
+}
+header .center #select{
+	width: 120px;
+	height: 40px;
+	float: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	font-size: 18px;
+}
+header .center .search{
+	width: 500px;
+	height: 40px;
+	float: left;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	border: 1px solid #ccc;
+}
+header .center .tp{
+	width: 50px;
+	height: 40px;
+	background-color: #666;
+	float: left;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+header .center .tp span{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url('../image/jinglingtu1.png') no-repeat -30px -280px;
+}
+header .right{
+	float: right;
+	width: 400px;
+	height: 40px;
+	background: url('../image/gz_813-820_ad_370x39._CB469915802_.jpg') no-repeat;
+}
+
+
+
+nav{
+	height: 45px;
+	position: relative;
+	z-index: 2;
+	background-image:linear-gradient(rgba(41,41,41,0.75) 20% ,
+rgba(54,54,54,0.72) 75%,rgba(24,23,23,0.94) 10%);
+	border-radius: 4px;
+	color: #fff;
+	box-shadow:0px 0px 6px #000;
+	font-family: "楷体";
+}
+nav a{
+	color: #fff;
+}
+nav .kind{
+	float: left;
+	width: 110px;
+	height: 100%;
+	position: relative;
+	zoom: 1;
+	border-right: 1px solid #000;
+}
+nav .kind::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+nav .kind p{
+	font-size: 14px;
+}
+nav .kind span{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') -379px -85px no-repeat;
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	top: 25px;
+	right: -5px;
+}
+nav .logo{
+	height: 100%;
+	float: left;
+}
+nav .logo ul{
+	overflow: hidden;
+}
+nav .logo ul li{
+	width: 125px;
+	height: 45px;
+	float: left;
+}
+nav .logo ul li:nth-of-type(6){
+	padding-right: 2px;
+}
+nav .logo ul li a{
+	height: 45px;
+	width: 125px;
+	display: inline-block;
+	margin-right: 40px;
+	text-align: center;
+	line-height: 45px;
+	border-right: 1px solid #000;
+}
+nav .account{
+	float: left;
+	width: 120px;
+	height: 45px;
+	text-align: center;
+	border-right: 1px solid #000;
+	position: relative;
+}
+nav .account .bot{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -379px -85px;
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	top: 23px;
+	right: 0px;
+}
+nav .account .menu{
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	z-index: 10;
+	width: 100px;
+	text-align: center;
+	color: #333; 
+	display: none;
+}
+nav .account ul li{
+	width: 120px;
+	height: 25px;
+	border:none;
+	line-height: 25px;
+	border-top:1px solid #989898;
+	background:rgba(10,5,5,0.45);
+	border-radius:10px;	
+}
+nav .free{
+	float: left;
+	width: 120px;
+	height: 45px;
+	text-align: center;
+	border-right: 1px solid #000;
+	position: relative;
+}
+nav .free .bot{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -379px -85px;
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	top: 23px;
+	right: 10px;
+}
+nav .free ul{
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	z-index: 10;
+	width: 120px;
+	text-align: center;
+	color: #333; 
+	display: none;
+}
+nav .free ul li img{
+	border: 10px solid #fff;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+nav .shopcar{
+	width: 120px;
+	height: 45px;
+	float: left;
+	position: relative;
+	border-right: 1px solid #000;
+}
+nav .shopcar p{
+	float: right;
+	margin-top: 20px;
+}
+nav .shopcar span{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -154px -234px;
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+nav .shopcar .zero{
+	position: absolute;
+	top: -15px;
+	left: 20px;
+	font-size: 16px;
+	color: orange;
+}
+nav .wish{
+	width: 120px;
+	height: 45px;
+	float: left;
+	position: relative;
+}
+nav .wish p{
+	text-align: center;
+	line-height: 45px;
+}
+nav .wish .bot{
+	display: inline-block;
+	background: url('../image/jinglingtu.png') no-repeat -379px -85px;
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+nav .wish ul{
+	display: none;
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	z-index: 10;
+	width: 120px;
+	text-align: center;
+	color: #333; 
+	display: none;
+}
+nav .wish ul li{
+	width: 120px;
+	height: 25px;
+	border:none;
+	line-height: 25px;
+	border-top:1px solid #989898;
+	background:rgba(10,5,5,0.45);
+	border-radius:10px;	
+}
+nav .account:hover .menu{
+	display:block;
+	animation:roll 1.5s ease;
+	transform-origin: top center;
+}
+nav .wish:hover ul{
+	display:block;
+	animation:roll 1.5s ease;
+	transform-origin: top center;
+}
+@keyframes roll{
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
+.pic{
+	width: 1000px;
+	height: 500px;
+	background: url('../image/free_.jpg') no-repeat;
+	background-size: 90% 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+
+
+
+
+
+footer{
+	margin-top: 20px;
+}
+footer a{
+	color: blue;
+}
+footer .login{
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+}
+footer .login>p{
+	color: #666;
+}
+footer .login li{
+	width: 250px;
+	text-align: center;
+	font-size: 14px;
+	overflow: hidden;
+	margin: 10px auto;
+}
+footer .login ul li a:nth-of-type(1){
+	display: inline-block;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	color: #000;
+	line-height: 30px;
+	border-radius: 5px;
+	background: linear-gradient(#ffd774,#ffc530);
+}
+footer .login li p:nth-of-type(2){
+	float: left;
+	margin-left: 70px;
+	margin-right: 10px;
+}
+footer .login li a:nth-of-type(2){
+	float: left;
+}
+
+
+footer .about{
+	width: 1000px;
+	margin: 0px auto;	
+	overflow: hidden;
+	text-align: left;
+}
+footer .about a{
+	display: inline-block;
+	font-size: 14px;
+	width: 200px;
+}
+footer .about ul{
+	width: 200px;
+	float: left;
+	margin-right: 30px;
+}
+footer .about p{
+	margin-bottom: 10px;
+}
+footer .other .title{
+	margin-top: 10px;
+	text-align: center;
+}
+footer .other .one{
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	margin: 10px auto;
+}
+footer .other .one ul{
+	text-align: center;
+	float: left;
+	line-height: 14px;
+}
+footer .other .one ul:nth-of-type(1){
+	margin-left: 100px;
+}
+footer .other .one ul li{
+	display: inline;
+	border-left: 1px solid #666;
+	padding: 0px 5px;
+	font-size: 12px;
+}
+footer .other .one ul li:nth-of-type(1){
+	border: none;
+}
+footer .other .one span{
+	display: inline-block;
+	padding: 0px 10px;
+	text-align: center;
+	font-size: 12px;
+	float: left;
+	color: #767676;
+}
+footer .other .one ul:nth-of-type(2) li:nth-of-type(4){
+	color: #767676;
+}
+footer .other .two{
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	margin: 10px auto;
+}
+footer .other .two ul{
+	text-align: center;
+	float: left;
+	line-height: 14px;
+}
+footer .other .two ul{
+	margin-left: 450px;
+}
+footer .other .two ul:nth-of-type(2){
+	width: 0px;
+	height: 0px;
+}
+footer .other .two ul li{
+	display: inline;
+	border-left: 1px solid #666;
+	padding: 0px 5px;
+	font-size: 12px;
+}
+footer .other .two ul li:nth-of-type(1){
+	border: none;
+}
+footer .other .two span{
+	display: inline-block;
+	padding: 0px 10px;
+	text-align: center;
+	font-size: 12px;
+	float: left;
+	color: #767676;
+}
+footer .other .three{
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	margin: 10px auto;
+}
+footer .other .three ul{
+	text-align: center;
+	float: left;
+	line-height: 14px;
+	margin-left: 480px;
+}
+footer .other .three ul li{
+	display: inline;
+	border-right: 1px solid #666;
+	padding: 0px 5px;
+	font-size: 12px;
+}
+footer .other .three ul li:nth-of-type(2){
+	border: none;
+}
+footer .other .three ul li img{
+	vertical-align: top;
+}
+
+footer .other .four{
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	margin: 10px auto;
+}
+footer .other .four ul{
+	text-align: center;
+	float: left;
+	line-height: 14px;
+	margin-left: 670px;
+}
+footer .other .four ul li{
+	display: inline;
+	padding: 0px 5px;
+	font-size: 12px;
+}
+
+footer .other .five{
+	text-align: center;
+	overflow: hidden;
+	margin: 10px auto;
+}
+footer .other .five ul{
+	text-align: center;
+	float: left;
+	line-height: 14px;
+	margin-left: 550px;
+}
+footer .other .five ul li{
+	display: inline;
+	border-right: 1px solid #666;
+	padding: 0px 5px;
+	font-size: 12px;
+	color: #767676;
+}
+footer .other .five ul li:nth-of-type(2){
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
